@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openoj>
+<workspaces>
+<save>true</save>
+<workDir>g:\oj\workdir</workDir>
+<javasource>g:\oj\java</javasource>
+<csource>g:\oj\c</csource>
+<cppsource>g:\oj\cpp</cppsource>
+<workspace ><java>g:\oj\workplace\java</java></workspace>
+<workspace><cpp>g:\oj\workplace\c</cpp></workspace>
+</workspaces>
+<coutfile>out.c</coutfile>
+<cppoutfile>out.cpp</cppoutfile>
+<exefile>execute.exe</exefile>
+<run>
+<javacom>java -cp</javacom>
+<javamain>OpenMain</javamain>
+</run>
+</openoj>

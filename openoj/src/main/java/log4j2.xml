@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<File name="app_debug" fileName="logs/debug.log" append="true">
+			<Filters>
+				<ThresholdFilter level="info" onMatch="DENY" onMismatch="NEUTRAL" />
+				<ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="NEUTRAL" />
+			</Filters>
+			<PatternLayout	pattern="%d{yyyy-MM-dd HH:mm:ss z} %-5level %class{36}.%M() -%L - %msg%xEx%n" />
+		</File>
+		
+		<File name="app_info" fileName="logs/info.log" append="true">
+			<Filters>
+				<ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL" />
+				<ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
+			</Filters>
+			<PatternLayout	pattern="%d{yyyy-MM-dd HH:mm:ss z} %-5level %class{36}.%M()-%L - %msg%xEx%n" />
+		</File>
+		<File name="app_error" fileName="logs/error.log" append="true">
+			<Filters>
+				<ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY" />
+			</Filters>
+			<PatternLayout	pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %class{36}.%M() Line:%L - %msg%xEx%n" />
+		</File>
+	</appenders>
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="Console" />
+			<!-- <appender-ref ref="app_debug" /> -->
+			<appender-ref ref="app_info" />
+			<appender-ref ref="app_error" />
+		</root>
+	</loggers>
+</configuration>  

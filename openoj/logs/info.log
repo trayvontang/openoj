@@ -1,0 +1,5 @@
+2015-11-16 16:19:10 CST INFO  org.openoj.compiler.OpenCCompiler.compile()-31 - g:\oj\c\out
+2015-11-16 16:29:58 CST INFO  org.openoj.compiler.OpenCCompiler.compile()-31 - gcc g:\oj\c\out.c -o g:\oj\c\execute.exe
+2015-11-16 16:33:08 CST INFO  org.openoj.compiler.OpenCCompiler.compile()-31 - gcc g:\oj\c\out -o g:\oj\c\execute.exe
+2015-11-16 16:34:24 CST INFO  org.openoj.compiler.OpenCCompiler.compile()-31 - gcc g:\oj\c\out.c -o g:\oj\c\execute.exe
+2015-11-16 16:56:50 CST INFO  org.openoj.compiler.OpenCPPCompiler.compile()-32 - g++ g:\oj\cpp\out.cpp -o g:\oj\cpp\execute.exe

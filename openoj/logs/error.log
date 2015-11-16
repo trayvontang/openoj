@@ -1,0 +1,2 @@
+2015-11-15 15:19:50 CST ERROR org.openoj.configuration.XMLConfiguration.getDocument() Line:59 - 可能是文件流错误
+2015-11-16 16:19:10 CST ERROR org.openoj.compiler.OpenCCompiler.writeToFile() Line:72 - Directory 'g:\oj\c\g:\oj\c' could not be created可能是文件输出错误
